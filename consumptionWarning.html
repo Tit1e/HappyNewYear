@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>消费信息</title>
+  <style>
+    html,body{
+      margin:0;
+      color: #fff;
+    }
+    body{
+      height: 100%;
+      background-image: url(beijing.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      font-family: "微软雅黑";
+      overflow: hidden;
+      font-weight: bold;
+      text-align: center;
+      position: relative;
+    }
+    h1{
+      margin:0;
+      margin-top: 20px;
+      font-size: 28px;
+    }
+    p{
+      color: #fff;
+      margin-top: 3px;
+    }
+    img{
+      width: 100%;
+    }
+    .sNameDiv{
+      border-bottom:2px dashed #fff;
+      width: 70%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>消费预警</h1>
+    <p id="date"></p>
+    <img src="syxx.png">
+  </div>
+  <script type="text/javascript">
+    var a = new Date();
+    var date = document.getElementById("date");
+    date.innerHTML = a.getFullYear()+"-"+(Number(a.getMonth())+1)+"-"+a.getDate();
+  </script>
+</body>
+</html>
